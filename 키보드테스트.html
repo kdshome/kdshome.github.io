@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <style>
+      body{margin:0;}
+      	#rect{width:30px; height:30px; position: absolute;background: red}
+      	}
+    </style>
+  </head>
+  <body>
+    <br />
+    <center>
+      <h3><a href="./index.html">홈으로</a></h3>
+    </center>
+    <div id="rect"></div>
+    <script type="text/javascript">
+      //up38 right39 down40 left 37;
+      var startX = 300,
+        startY = 300;
+      rect.style.left = startX + 'px';
+      rect.style.top = startX + 'px';
+      window.onkeydown = function () {
+        if (event.keyCode == 38) {
+          startY -= 30;
+          rect.style.top = startY + 'px';
+        } else if (event.keyCode == 39) {
+          startX += 30;
+          rect.style.left = startX + 'px';
+        } else if (event.keyCode == 40) {
+          startY += 30;
+          rect.style.top = startY + 'px';
+        } else if (event.keyCode == 37) {
+          startX -= 30;
+          rect.style.left = startX + 'px';
+        }
+      };
+    </script>
+  </body>
+</html>
