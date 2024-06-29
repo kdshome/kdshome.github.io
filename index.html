@@ -4,6 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <script>
+      // F12 클릭 방어
+      window.addEventListener('keydown', function (event) {
+        if (event.keyCode === 123) {
+          event.preventDefault();
+        }
+      });
+      // 마우스 우클릭 방어
+      window.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+      });
+      // Ctrl+Shift+I 클릭 방어
+      window.addEventListener('keydown', function (event) {
+        if (event.ctrlKey && event.shiftKey && event.keyCode === 73) {
+          event.preventDefault();
+        }
+      });
+    </script>
+
     <link rel="stylesheet" href="./login.css" />
     <script defer src="./login.js"></script>
   </head>
