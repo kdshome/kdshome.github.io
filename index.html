@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>kds home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css" />
+    <script defer src="./login.js"></script>
   </head>
+
   <body>
-    <table border="1">
-      <tr colspan="3" width="">
-        <h2>&nbsp;&nbsp kds 홈페이지 입니다</h2>
-        &nbsp;&nbsp;&nbsp;&nbsp
-        <a href="./main01.html">home</a
-        >&nbsp;&nbsp;&nbsp;&nbsp
-        <a href="https://kdshub.wixsite.com/kdshome/forum" target="_blank"
-          >게시판</a
-        >&nbsp;&nbsp;&nbsp;&nbsp
-        <a href="./main03.html">main03</a
-        >&nbsp;&nbsp;&nbsp;&nbsp
-        <a href="./main04.html">main04</a
-        >&nbsp;&nbsp;&nbsp;&nbsp
-        <hr />
-      </tr>
-      <tr>
-        <iframe
-          src="https://naver.me/5buBdFv2"
-          width="1200"
-          height="600"
-          frameborder="0"
-        ></iframe>
-      </tr>
-    </table>
+    <main id="main-holder">
+      <h1 id="login-header">KDS HOME</h1>
+
+      <div id="login-error-msg-holder">
+        <p id="login-error-msg">
+          Invalid username
+          <span id="error-msg-second-line">and/or password</span>
+        </p>
+      </div>
+
+      <form id="login-form">
+        <input
+          type="text"
+          name="username"
+          id="username-field"
+          class="login-form-field"
+          placeholder="Username"
+        />
+        <input
+          type="password"
+          name="password"
+          id="password-field"
+          class="login-form-field"
+          placeholder="Password"
+        />
+        <input type="submit" value="Login" id="login-form-submit" />
+      </form>
+    </main>
   </body>
 </html>
