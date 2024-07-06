@@ -17,14 +17,14 @@ loginButton.addEventListener('click', (event) => {
 
   if (username === 'kdshome' && password === '0000') {
     alert('KDS HOME 방문을 환영 합니다.');
-    location.href = 'https://kdshome.github.io/main01.html';
+    location.href = 'https://kdshome.github.io/kdshome.html';
     /*  location.reload(); */
   } else if (username === 'kds11' && password === 'home11') {
     alert('KDS HOME 방문을 환영 합니다.');
-    location.href = 'https://kdshome.github.io/main01.html';
+    location.href = 'https://kdshome.github.io/kdshome.html';
   } else if (username === 'kds22' && password === 'home22') {
     alert('KDS HOME 방문을 환영 합니다.');
-    location.href = 'https://kdshome.github.io/main01.html';
+    location.href = 'https://kdshome.github.io/kdshome.html';
   } else {
     alert('아이디와 패스워드 다시 입력 하세요');
     loginErrorMsg.style.opacity = 1;
